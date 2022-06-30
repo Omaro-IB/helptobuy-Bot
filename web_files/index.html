@@ -1,0 +1,1320 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="HelpToBuyApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-language" content="en" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>Property details</title>
+    <meta name="description" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:title" content="Property details" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://helptobuyagent3.org.uk/find-a-home/property-details/" />
+    <meta property="og:site_name" content="Help to Buy South" />
+    <meta property="og:image" content="https://helptobuyagent3.org.uk/Content/Images/logo.png" />
+    <meta property="og:description" />
+    <link rel="apple-touch-icon" href="/Content/Images/favicon.png" />
+    <link rel="shortcut icon" href="/Content/Images/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/Content/Images/favicon48x48.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/Content/Images/favicon32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/Content/Images/favicon16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/Content/Images/favicon48x48.png" />
+    <script src="/Scripts/fallback.min.js" type="text/javascript"></script>
+    <script>
+        fallback.load({
+            "css$bootstrap": {
+                "urls": [
+                    "//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css",
+                    "/Content/Css/Libs/bootstrap.min.css"
+                ]
+            },
+            "css$fontawsome": {
+                "urls": [
+                    "//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css",
+                    "/Content/Css/Libs/all.min.css"
+                ],
+                integrity: 'sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=',
+                crossorigin: 'anonymous'
+            },
+            "css$jqueryui": {
+                "urls": [
+                    "//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css",
+                    "/Content/Css/Libs/jquery-ui.min.css"
+                ],
+                integrity: 'sha256-rByPlHULObEjJ6XQxW/flG2r+22R5dKiAoef+aXWfik=',
+                crossorigin: 'anonymous'
+            }
+        })
+    </script>
+
+    <link href="/DependencyHandler.axd?s=L0NvbnRlbnQvQ3NzL0xpYnMvbm91aXNsaWRlci5taW4uY3NzOy9Db250ZW50L0Nzcy9MaWJzL2Jvb3RzdHJhcC1kYXRlcGlja2VyLm1pbi5jc3M7L0NvbnRlbnQvQ3NzL0xpYnMvZmxleHNsaWRlci1ydGwtbWluLmNzczsvQ29udGVudC9Dc3MvY29yZS5jc3M7L0NvbnRlbnQvQ3NzL21lZGlhLXF1ZXJpZXMuY3NzOw&amp;t=Css&amp;cdv=592075396" type="text/css" rel="stylesheet"/>
+    
+    
+<script src="https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js" type="text/javascript"></script>
+<script>
+    var config = {
+        apiKey: '7b824748ab0a91439ec900eebba8a364c95c40c8',
+        product: 'PRO',
+        theme: 'LIGHT',
+        initialState: "open",
+        position: 'left',
+        text: {
+            title: 'Our use of cookies',
+            intro: 'We put small files (known as cookies) onto your device to collect anonymised information about how you browse our website. \n\nCookies can be used to remember your progress and analyse how you use the website so it can be updated and improved based on your needs.',
+            necessaryTitle: 'Strictly necessary cookies',
+            necessaryDescription: 'These help make a website usable by enabling basic functions like page navigation. The website cannot function properly without these cookies. These cannot be declined.',
+            thirdPartyTitle: 'Warning: Some cookies require your attention',
+            thirdPartyDescription: 'Consent for some third party cookies can not be automatically revoked. Please follow the link below if you want to opt out of them.'
+        },
+        statement: {
+            description: 'For more information please see our',
+            name: 'cookies policy',
+            url: 'https://www.helptobuyagent3.org.uk/privacy-statement/',
+            updated: '01/10/2020'
+        },
+        necessaryCookies: ["CookieControl", "AWSELBCORS", "htb*"],
+        optionalCookies: [
+            {
+                name: 'analytics',
+                label: 'Analytical Cookies',
+                description: 'We\'d like to use Google Analytics cookies to help us to improve our website by collecting and reporting information on how you use it.The cookies collect information in a way that does not directly identify you as an individual.',
+                cookies: ['_ga', '_gid', '_gat', '__utma', '__utmt', '__utmb', '__utmc', '__utmz', '__utmv'],
+                vendors: [{
+                    name: "Google",
+                    url: "https://policies.google.com/technologies/types?hl=en-GB",
+                    description: "Google Analytics"
+                }],
+                onAccept: function () {
+                    // Add Google Analytics
+                    (function (i, s, o, g, r, a, m) {
+                        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                            (i[r].q = i[r].q || []).push(arguments)
+                        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+                    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+                    ga('create', 'UA-105837432-1', 'auto');
+                    ga('send', 'pageview');
+                    // End Google Analytics
+                },
+                onRevoke: function () {
+                    // Disable Google Analytics
+                    window['ga-disable-UA-105837432-1'] = true;
+                    // End Google Analytics
+                }
+            },
+            {
+                name: 'socialsharing',
+                label: 'Social Sharing Cookies',
+                description: 'We use some social sharing plugins, to allow you to share certain pages of our website on social media',
+                cookies: ['__stidv', '__stid'],
+                onAccept: function () {
+                    // Add addThis
+                    var script = document.createElement("script");
+                    script.src = "//platform-api.sharethis.com/js/sharethis.js#property=5dcd432c54b7c100121d5981&product=inline-share-buttons";
+                    document.body.appendChild(script);
+                    // End addThis
+                },
+                onRevoke: function () {
+                },
+                thirdPartyCookies: [{ "name": "ShareThis", "optOutLink": "https://sharethis.com/privacy/" }]
+            }
+        ]
+    };
+    CookieControl.load(config);
+</script>
+
+
+</head>
+<body ng-cloak>
+    <header class="header" aria-label="Main Navigation">
+        <div class="top-line">
+            <div class="container text-right">
+                <a href="https://portal.helptobuyagent3.org.uk/" target="_blank" class="btn btn-signin">Equity Loan Portal</a>
+                    <a href="/profile" class="btn btn-signin">My Homepage</a>
+                    <a href="/user?logout=true" class="btn btn-signin">Logout</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="nav" role="navigation">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <a class="nav-title" href="/">
+                <img src="/Content/Images/logo.png" alt="Help to Buy" />
+            </a>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <div class="nav-links topnav">
+            <ul class="main-nav" role="menubar">
+                    <li class="nav-item " role="none">
+                        <a class="nav-link" href="/about-us/"  role="menuitem">About us</a>
+                                            </li>
+                    <li class="nav-item dropdown" role="none">
+                        <a class="nav-link" href="/help-to-buy-schemes/" aria-haspopup=true aria-expanded=false role="menuitem">Buying options</a>
+                            <div class="dropdown-menu" role="menu">
+                                    <a class="dropdown-item" href="/help-to-buy-schemes/buying-options/" role="menuitem">
+Buying options                                    </a>
+                                    <a class="dropdown-item" href="/help-to-buy-schemes/equity-loan/" role="menuitem">
+Help to Buy: Equity Loan                                    </a>
+                                    <a class="dropdown-item" href="/help-to-buy-schemes/help-to-buy-eligibility/" role="menuitem">
+Who is eligible for Help to Buy: Equity Loan                                     </a>
+                                    <a class="dropdown-item" href="/help-to-buy-schemes/equity-loan-applications/" role="menuitem">
+How to apply for Help to Buy: Equity Loan                                    </a>
+                                    <a class="dropdown-item" href="/help-to-buy-schemes/shared-ownership/" role="menuitem">
+Shared ownership                                    </a>
+                                    <a class="dropdown-item" href="/help-to-buy-schemes/applying-shared-ownership/" role="menuitem">
+Applying for shared ownership                                    </a>
+                                    <a class="dropdown-item" href="/help-to-buy-schemes/shared-ownership-faqs/" role="menuitem">
+FAQs - shared ownership                                    </a>
+                                    <a class="dropdown-item" href="/help-to-buy-schemes/mortgage-calculator/" role="menuitem">
+Mortgage calculator                                    </a>
+                                    <a class="dropdown-item" href="/help-to-buy-schemes/rent-to-buy/" role="menuitem">
+Rent to Buy                                    </a>
+                                    <a class="dropdown-item" href="/help-to-buy-schemes/home-ownership-for-people-with-long-term-disabilities-hold-q-a/" role="menuitem">
+Home Ownership for people with Long-term Disabilities (HOLD): Q&amp;A                                    </a>
+                            </div>
+                                            </li>
+                    <li class="nav-item current " role="none">
+                        <a class="nav-link" href="/find-a-home/"  role="menuitem">Find a home</a>
+                                            </li>
+                    <li class="nav-item dropdown" role="none">
+                        <a class="nav-link" href="/apply-page/" aria-haspopup=true aria-expanded=false role="menuitem">Apply</a>
+                                                    <div class="dropdown-menu" role="menu">
+                                <a class="dropdown-item" target="_blank" href="https://portal.helptobuyagent3.org.uk/" role="menuitem">Equity Loan</a>
+                                <a class="dropdown-item" href="/apply" role="menuitem">Shared Ownership</a>
+                            </div>
+                    </li>
+                    <li class="nav-item " role="none">
+                        <a class="nav-link" href="/help-and-advice/"  role="menuitem">Help &amp; Advice</a>
+                                            </li>
+                    <li class="nav-item dropdown" role="none">
+                        <a class="nav-link" href="/for-professionals/" aria-haspopup=true aria-expanded=false role="menuitem">Information for professionals</a>
+                            <div class="dropdown-menu" role="menu">
+                                    <a class="dropdown-item" href="/for-professionals/help-to-buy-equity-loan-information-for-homebuilders/" role="menuitem">
+Homebuilders                                    </a>
+                                    <a class="dropdown-item" href="/for-professionals/information-for-financial-advisors-and-mortgage-brokers/" role="menuitem">
+Financial advisors                                    </a>
+                                    <a class="dropdown-item" href="/for-professionals/help-to-buy-equity-loan-information-for-conveyancers/" role="menuitem">
+Solicitors                                    </a>
+                            </div>
+                                            </li>
+            </ul>
+        </div>
+    </div>
+        </div>
+    </header>
+    <div>
+        
+
+    <div class="">
+
+        <div class="container page mt-3">
+            <div class="row">
+                <div class="col-lg-12 text-right">
+                    <a class="goback" href="javascript:history.back()">« Back to search</a>
+                </div>
+                <div class="col-lg-8" role="banner">
+                    <h1 role="banner" class="mb-1">Tilekiln Green, Great Hallingbury</h1>
+                    <h2 class="h5 mb-4 color-dark-green font-weight-bold">
+                        <em>
+                            Mead Field Drive,Great Hallingbury
+                        </em>
+                    </h2>
+                    <input type="hidden" name="interestAddress" id="interestAddress" value="Mead Field Drive" />
+                </div>
+                <div class="col-lg-4 text-right pt-3 pb-2">
+                        <button id="favbutton" type="button" class="btn btn-outline-primary" onclick="updateFavourite(72987, 2, 2)">
+                            <i class="fas fa-star" aria-hidden="true"></i> Favourite Property
+                        </button>
+                </div>
+            </div>
+        </div>
+        <div role="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <input type="hidden" id="lat" value="51.868678" />
+                        <input type="hidden" id="lng" value="0.2078106" />
+                        <div class="property-images-large clearfix">
+                            <ul class="slides">
+                                    <li>
+                                        <img src="https://saprodhtb.blob.core.windows.net/properties/72987/images/72987571b8841-969c-4daf-bda1-f896a51257c6_zoom.jpg?v=637910726598070000" class="img-fluid" alt="Plot 3, 4 and 5" width="720" />
+                                    </li>
+                            </ul>
+                        </div>
+                        <div class="property-images-thumbs flexslider1 clearfix">
+                            <ul class="slides">
+                                    <li>
+                                        <img src="https://saprodhtb.blob.core.windows.net/properties/72987/images/72987571b8841-969c-4daf-bda1-f896a51257c6_zoom.jpg?v=637910726598070000" class="img-fluid" alt="Plot 3, 4 and 5" />
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                            <dl class="property-meta">
+                                <dt>Property Type</dt>
+                                <dd>
+                                        <span>2 bedroom</span>
+                                    house
+                                </dd>
+                                <dt>Number available</dt>
+                                <dd>3</dd>
+                                <dt>Scheme</dt>
+                                <dd>Shared Ownership New Build</dd>
+                                <dt>Available From</dt>
+                                <dd>31 August 2022</dd>
+                            </dl>
+                            <hr />
+                        <h3 class="h5 font-weight-bold">For further information contact</h3>
+
+                            <p>
+                                <img src="https://media2.helptobuyagent3.org.uk/images/logos/538.jpg" alt="Eastlight Community Homes" class="img-fluid" />
+                            </p>
+                        <p class="developer">
+                                <a href="https://www.greenfieldsch.org.uk/" target="_blank"><b>Eastlight Community Homes</b></a>
+                        </p>
+                        <p>03301280330</p>
+                        <p><a href="mailto:shared.ownership@eastlighthomes.co.uk">shared.ownership@eastlighthomes.co.uk</a></p>
+
+                                <p><button onclick="registerInterest(72987,959320000, '')" type="button" class="btn btn-primary"><i class="far fa-clipboard"></i> Register Interest</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="property-meta-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p class="property-meta-label">Full Price</p>
+                            <p class="property-meta-value">&#163;375,000</p>
+                                <p class="property-meta-label">
+                                    Share Example
+                                </p>
+                            <p class="property-meta-value">
+                                40% share - &#163;150,000
+                            </p>
+                        </div>
+                        <div class="col-lg-4">
+                            <p class="property-meta-label">Monthly Rent</p>
+                            <p class="property-meta-value">&#163;515.63</p>
+
+                            <p class="property-meta-label">Monthly Service Charge</p>
+                            <p class="property-meta-value">&#163;20.00</p>
+                        </div>
+                        <div class="col-lg-4">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="property-tabs">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" href="#features" role="tab" data-toggle="tab" aria-selected="true">Features</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" href="#description" role="tab" data-toggle="tab" aria-selected="false">Description</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" href="#map" role="tab" data-toggle="tab" aria-selected="false">Map</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" href="#schools" role="tab" data-toggle="tab" aria-selected="false">Schools</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" href="#downloads" role="tab" data-toggle="tab" aria-selected="false">Downloads</a>
+                                </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" href="#plots" role="tab" data-toggle="tab" aria-selected="false">Plots</a>
+                                    </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="features" role="tabpanel">
+                                    <ul class="">
+                                            <li class="mb-2">Integrated over, hob and hood</li>
+                                                                                    <li class="mb-2">Integrated fridge/freezer, washer/drier and compact dishwasher</li>
+                                                                                    <li class="mb-2">Carpets throughout</li>
+                                                                                    <li class="mb-2">Vinyl flooring to wet areas</li>
+                                                                                    <li class="mb-2">Turf to rear enclosed garden</li>
+                                                                                    <li class="mb-2">Allocated parking </li>
+                                                                                                                        <li class="mb-2">Individual EPCs are available upon request from the developer/housing association</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane" id="description" role="tabpanel">
+<p>Eastlight is proud to offer 3 x two bedroom houses in the new Rivertree Properties developement at Tilekiln Green in Great Hallingbury. The properties are due to become available for occupation in September 2022 so we are now accepting off-plan reservations. *please note that we are not able to offer viewings until we have taken handover of the proeprties, currently expected to take place at the end of August*</p>
+<p>Situated on the outskirts of Bishop's Stortford, the village is ideally situated to combine modern living and comfort. With Stansted airport a short 10 minute drive away and both M11 and M25 in close proximity, the village also enjoys a wide range of woodland and nature walks and trails.</p>
+<p>* There is no local connection requirement, however priority will be given to applicants who can demonstrate a connection to the wider Uttlesford area</p>
+<p>**Images used for illustrative purpose only</p>
+<p>***Service charges stated are a current estimate</p>                                                                    </div>
+                                <div class="tab-pane" id="map" role="tabpanel">
+                                    <div class="property-map" id="propertyMap"></div>
+                                </div>
+                                <div class="tab-pane" id="schools">
+                                        <ul class="nav nav-tabs justify-content-center" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link active" href="#primary" role="tab" data-toggle="tab">Primary</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" href="#secondary" role="tab" data-toggle="tab">Secondary</a>
+                                            </li>
+                                        </ul>
+                                        <input type="hidden" name="schoolListPrimary" id="schoolListPrimary" value="[{&quot;Distance&quot;:1.1796834566772536,&quot;URN&quot;:137351,&quot;SchoolName&quot;:&quot;Summercroft Primary School&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:3,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Does not apply&quot;,&quot;NumberOfPupils&quot;:447,&quot;Website&quot;:&quot;http://www.summercroft.herts.sch.uk/&quot;,&quot;Lat&quot;:51.872892,&quot;Lng&quot;:0.181100,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:1.3428498184279467,&quot;URN&quot;:115127,&quot;SchoolName&quot;:&quot;Birchanger Church of England Voluntary Controlled Primary School&quot;,&quot;SchoolType&quot;:&quot;Voluntary controlled school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:4,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Church of England&quot;,&quot;NumberOfPupils&quot;:121,&quot;Website&quot;:&quot;http://www.birchanger.essex.sch.uk&quot;,&quot;Lat&quot;:51.885133,&quot;Lng&quot;:0.191138,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:1.4407906735223697,&quot;URN&quot;:117472,&quot;SchoolName&quot;:&quot;All Saints Church of England Primary School and Nursery, Bishop\u0027s Stortford&quot;,&quot;SchoolType&quot;:&quot;Voluntary aided school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:3,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Church of England&quot;,&quot;NumberOfPupils&quot;:208,&quot;Website&quot;:&quot;http://www.allsaints.herts.sch.uk/&quot;,&quot;Lat&quot;:51.875201,&quot;Lng&quot;:0.175836,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:1.4934856733923267,&quot;URN&quot;:117277,&quot;SchoolName&quot;:&quot;Thorn Grove Primary School&quot;,&quot;SchoolType&quot;:&quot;Community school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:3,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Does not apply&quot;,&quot;NumberOfPupils&quot;:227,&quot;Website&quot;:&quot;http://www.thorngrove.herts.sch.uk/&quot;,&quot;Lat&quot;:51.864343,&quot;Lng&quot;:0.173627,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:1.9136400178469775,&quot;URN&quot;:115269,&quot;SchoolName&quot;:&quot;St Mary\u0027s CofE Foundation Primary School&quot;,&quot;SchoolType&quot;:&quot;Foundation school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:5,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Church of England&quot;,&quot;NumberOfPupils&quot;:307,&quot;Website&quot;:&quot;http://www.stmarysstansted.co.uk&quot;,&quot;Lat&quot;:51.895671,&quot;Lng&quot;:0.197915,&quot;OfstedRating&quot;:&quot;Requires improvement&quot;},{&quot;Distance&quot;:2.1960112852721254,&quot;URN&quot;:117230,&quot;SchoolName&quot;:&quot;Thorley Hill Primary School&quot;,&quot;SchoolType&quot;:&quot;Community school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:3,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Does not apply&quot;,&quot;NumberOfPupils&quot;:229,&quot;Website&quot;:&quot;http://www.thorleyhill.herts.sch.uk/&quot;,&quot;Lat&quot;:51.856894,&quot;Lng&quot;:0.160169,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:2.2321672023941024,&quot;URN&quot;:117426,&quot;SchoolName&quot;:&quot;St Michael\u0027s Church of England Primary School&quot;,&quot;SchoolType&quot;:&quot;Voluntary aided school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:3,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Church of England&quot;,&quot;NumberOfPupils&quot;:235,&quot;Website&quot;:&quot;http://www.stmichaelsjmi.herts.sch.uk/&quot;,&quot;Lat&quot;:51.868100,&quot;Lng&quot;:0.155665,&quot;OfstedRating&quot;:&quot;Outstanding&quot;},{&quot;Distance&quot;:2.2366518404444293,&quot;URN&quot;:141851,&quot;SchoolName&quot;:&quot;Windhill21&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:3,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Does not apply&quot;,&quot;NumberOfPupils&quot;:485,&quot;Website&quot;:&quot;http://www.windhill.herts.sch.uk&quot;,&quot;Lat&quot;:51.869199,&quot;Lng&quot;:0.155558,&quot;OfstedRating&quot;:&quot;Outstanding&quot;},{&quot;Distance&quot;:2.4513282529874778,&quot;URN&quot;:142771,&quot;SchoolName&quot;:&quot;Magna Carta Primary Academy&quot;,&quot;SchoolType&quot;:&quot;Free school&quot;,&quot;SchoolTypeGroup&quot;:&quot;Free school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:4,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:82,&quot;Website&quot;:&quot;http://www.magnacartaacademy.org/&quot;,&quot;Lat&quot;:51.903618,&quot;Lng&quot;:0.198070,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:2.4884151414096061,&quot;URN&quot;:117346,&quot;SchoolName&quot;:&quot;Richard Whittington Primary School&quot;,&quot;SchoolType&quot;:&quot;Community school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:3,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Does not apply&quot;,&quot;NumberOfPupils&quot;:322,&quot;Website&quot;:&quot;http://www.whittington.herts.sch.uk&quot;,&quot;Lat&quot;:51.856429,&quot;Lng&quot;:0.153147,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:2.507051520526562,&quot;URN&quot;:117425,&quot;SchoolName&quot;:&quot;St Joseph\u0027s Catholic Primary School&quot;,&quot;SchoolType&quot;:&quot;Voluntary aided school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:3,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Roman Catholic&quot;,&quot;NumberOfPupils&quot;:355,&quot;Website&quot;:&quot;http://www.stjosephs207.herts.sch.uk&quot;,&quot;Lat&quot;:51.867714,&quot;Lng&quot;:0.149255,&quot;OfstedRating&quot;:&quot;Outstanding&quot;},{&quot;Distance&quot;:2.5440177521841338,&quot;URN&quot;:138539,&quot;SchoolName&quot;:&quot;Northgate Primary School&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:3,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Does not apply&quot;,&quot;NumberOfPupils&quot;:469,&quot;Website&quot;:&quot;http://www.northgate.herts.sch.uk/&quot;,&quot;Lat&quot;:51.875982,&quot;Lng&quot;:0.149548,&quot;OfstedRating&quot;:&quot;Not Available&quot;},{&quot;Distance&quot;:2.6087142010010034,&quot;URN&quot;:115182,&quot;SchoolName&quot;:&quot;Little Hallingbury Church of England Voluntary Aided Primary School&quot;,&quot;SchoolType&quot;:&quot;Voluntary aided school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:5,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Church of England&quot;,&quot;NumberOfPupils&quot;:141,&quot;Website&quot;:&quot;http://www.lhandsmhboschools.co.uk&quot;,&quot;Lat&quot;:51.835613,&quot;Lng&quot;:0.178456,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:2.6471486742779953,&quot;URN&quot;:141681,&quot;SchoolName&quot;:&quot;Roseacres Primary School&quot;,&quot;SchoolType&quot;:&quot;Academy sponsor led&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:4,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Does not apply&quot;,&quot;NumberOfPupils&quot;:153,&quot;Website&quot;:&quot;http://www.roseacres.co.uk&quot;,&quot;Lat&quot;:51.870336,&quot;Lng&quot;:0.269604,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:2.8699493504171762,&quot;URN&quot;:114978,&quot;SchoolName&quot;:&quot;Bentfield Primary School&quot;,&quot;SchoolType&quot;:&quot;Community school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:3,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Does not apply&quot;,&quot;NumberOfPupils&quot;:257,&quot;Website&quot;:&quot;http://www.bentfield.essex.sch.uk/&quot;,&quot;Lat&quot;:51.909226,&quot;Lng&quot;:0.193444,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:2.9619514231026307,&quot;URN&quot;:144960,&quot;SchoolName&quot;:&quot;Manor Fields Primary School&quot;,&quot;SchoolType&quot;:&quot;Academy sponsor led&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:3,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Does not apply&quot;,&quot;NumberOfPupils&quot;:437,&quot;Website&quot;:&quot;http://www.manorfields.herts.sch.uk&quot;,&quot;Lat&quot;:51.859932,&quot;Lng&quot;:0.140069,&quot;OfstedRating&quot;:&quot;Not Available&quot;},{&quot;Distance&quot;:3.01577713967098,&quot;URN&quot;:117310,&quot;SchoolName&quot;:&quot;Hillmead Primary School&quot;,&quot;SchoolType&quot;:&quot;Community school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:3,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Does not apply&quot;,&quot;NumberOfPupils&quot;:285,&quot;Website&quot;:&quot;http://www.hillmead.herts.sch.uk/&quot;,&quot;Lat&quot;:51.869729,&quot;Lng&quot;:0.137367,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:3.1479744885291514,&quot;URN&quot;:142049,&quot;SchoolName&quot;:&quot;Takeley Primary School&quot;,&quot;SchoolType&quot;:&quot;Academy sponsor led&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:4,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:390,&quot;Website&quot;:&quot;&quot;,&quot;Lat&quot;:51.869003,&quot;Lng&quot;:0.281361,&quot;OfstedRating&quot;:&quot;Requires improvement&quot;},{&quot;Distance&quot;:3.234434656405111,&quot;URN&quot;:117405,&quot;SchoolName&quot;:&quot;Spellbrook CofE Primary School&quot;,&quot;SchoolType&quot;:&quot;Voluntary controlled school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:3,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Church of England&quot;,&quot;NumberOfPupils&quot;:105,&quot;Website&quot;:&quot;http://www.spellbrook.herts.sch.uk/&quot;,&quot;Lat&quot;:51.834178,&quot;Lng&quot;:0.156788,&quot;OfstedRating&quot;:&quot;Requires improvement&quot;},{&quot;Distance&quot;:3.3170341461472477,&quot;URN&quot;:115178,&quot;SchoolName&quot;:&quot;St Mary\u0027s Church of England Voluntary Aided Primary School, Hatfield Broad Oak&quot;,&quot;SchoolType&quot;:&quot;Voluntary aided school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:4,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Church of England&quot;,&quot;NumberOfPupils&quot;:92,&quot;Website&quot;:&quot;http://www.lhandsmhboschools.co.uk&quot;,&quot;Lat&quot;:51.826609,&quot;Lng&quot;:0.245055,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:3.334415402239975,&quot;URN&quot;:115129,&quot;SchoolName&quot;:&quot;Elsenham Church of England Voluntary Controlled Primary School&quot;,&quot;SchoolType&quot;:&quot;Voluntary controlled school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:4,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Church of England&quot;,&quot;NumberOfPupils&quot;:229,&quot;Website&quot;:&quot;http://www.elsenham.essex.sch.uk&quot;,&quot;Lat&quot;:51.914061,&quot;Lng&quot;:0.234191,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:3.5345154158642247,&quot;URN&quot;:115189,&quot;SchoolName&quot;:&quot;Farnham Church of England Primary School&quot;,&quot;SchoolType&quot;:&quot;Voluntary aided school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:4,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Church of England&quot;,&quot;NumberOfPupils&quot;:44,&quot;Website&quot;:&quot;http://www.farnham.essex.sch.uk&quot;,&quot;Lat&quot;:51.902697,&quot;Lng&quot;:0.146142,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:3.7897030366050806,&quot;URN&quot;:114979,&quot;SchoolName&quot;:&quot;Manuden Primary School&quot;,&quot;SchoolType&quot;:&quot;Community school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:4,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Does not apply&quot;,&quot;NumberOfPupils&quot;:102,&quot;Website&quot;:&quot;http://www.manudenprimary.co.uk&quot;,&quot;Lat&quot;:51.917281,&quot;Lng&quot;:0.166847,&quot;OfstedRating&quot;:&quot;Outstanding&quot;},{&quot;Distance&quot;:3.8277374914822215,&quot;URN&quot;:141714,&quot;SchoolName&quot;:&quot;Hatfield Heath Primary School&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:4,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Does not apply&quot;,&quot;NumberOfPupils&quot;:214,&quot;Website&quot;:&quot;http://www.hatfieldheath.essex.sch.uk/&quot;,&quot;Lat&quot;:51.813319,&quot;Lng&quot;:0.206498,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:4.2887313484935454,&quot;URN&quot;:117280,&quot;SchoolName&quot;:&quot;Reedings Junior School&quot;,&quot;SchoolType&quot;:&quot;Community school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:7,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Does not apply&quot;,&quot;NumberOfPupils&quot;:242,&quot;Website&quot;:&quot;http://www.reedings.herts.sch.uk&quot;,&quot;Lat&quot;:51.817218,&quot;Lng&quot;:0.151886,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:4.4499811622861349,&quot;URN&quot;:117305,&quot;SchoolName&quot;:&quot;Mandeville Primary School&quot;,&quot;SchoolType&quot;:&quot;Community school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:3,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Does not apply&quot;,&quot;NumberOfPupils&quot;:252,&quot;Website&quot;:&quot;http://www.mandeville221.herts.sch.uk/&quot;,&quot;Lat&quot;:51.817454,&quot;Lng&quot;:0.144889,&quot;OfstedRating&quot;:&quot;Outstanding&quot;},{&quot;Distance&quot;:4.481808952881579,&quot;URN&quot;:117149,&quot;SchoolName&quot;:&quot;Fawbert and Barnard Infants\u0027 School&quot;,&quot;SchoolType&quot;:&quot;Community school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:3,&quot;MaxAge&quot;:7,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Does not apply&quot;,&quot;NumberOfPupils&quot;:219,&quot;Website&quot;:&quot;http://www.fandb.herts.sch.uk&quot;,&quot;Lat&quot;:51.813901,&quot;Lng&quot;:0.151844,&quot;OfstedRating&quot;:&quot;Outstanding&quot;},{&quot;Distance&quot;:4.5557326278288164,&quot;URN&quot;:114975,&quot;SchoolName&quot;:&quot;Henham and Ugley Primary and Nursery School&quot;,&quot;SchoolType&quot;:&quot;Community school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:3,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Does not apply&quot;,&quot;NumberOfPupils&quot;:203,&quot;Website&quot;:&quot;http://www.henhamugley.essex.sch.uk&quot;,&quot;Lat&quot;:51.929298,&quot;Lng&quot;:0.249566,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:4.562340054147465,&quot;URN&quot;:115099,&quot;SchoolName&quot;:&quot;Sheering Church of England Voluntary Controlled Primary School&quot;,&quot;SchoolType&quot;:&quot;Voluntary controlled school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:4,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Church of England&quot;,&quot;NumberOfPupils&quot;:103,&quot;Website&quot;:&quot;http://www.sheeringschool.org.uk&quot;,&quot;Lat&quot;:51.804247,&quot;Lng&quot;:0.184790,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:4.9540438062615877,&quot;URN&quot;:117126,&quot;SchoolName&quot;:&quot;Little Hadham Primary School&quot;,&quot;SchoolType&quot;:&quot;Community school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Primary&quot;,&quot;MinAge&quot;:4,&quot;MaxAge&quot;:11,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Does not apply&quot;,&quot;NumberOfPupils&quot;:128,&quot;Website&quot;:&quot;http://www.littlehadham.herts.sch.uk/&quot;,&quot;Lat&quot;:51.883350,&quot;Lng&quot;:0.094494,&quot;OfstedRating&quot;:&quot;Good&quot;}]" />
+                                        <input type="hidden" name="schoolListSecondary" id="schoolListSecondary" value="[{&quot;Distance&quot;:1.1603996851820162,&quot;URN&quot;:137637,&quot;SchoolName&quot;:&quot;Birchwood High School&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:1345,&quot;Website&quot;:&quot;http://www.birchwoodonline.co.uk/&quot;,&quot;Lat&quot;:51.874318,&quot;Lng&quot;:0.182273,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:1.5723595654491311,&quot;URN&quot;:140786,&quot;SchoolName&quot;:&quot;The Hertfordshire \u0026 Essex High School and Science College&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Girls&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:1292,&quot;Website&quot;:&quot;http://www.hertsandessex.herts.sch.uk/&quot;,&quot;Lat&quot;:51.867744,&quot;Lng&quot;:0.171104,&quot;OfstedRating&quot;:&quot;Not Available&quot;},{&quot;Distance&quot;:1.5752269396614815,&quot;URN&quot;:136482,&quot;SchoolName&quot;:&quot;Hockerill Anglo-European College&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:839,&quot;Website&quot;:&quot;http://www.hockerill.com&quot;,&quot;Lat&quot;:51.871052,&quot;Lng&quot;:0.171205,&quot;OfstedRating&quot;:&quot;Not Available&quot;},{&quot;Distance&quot;:1.7487961098779994,&quot;URN&quot;:141328,&quot;SchoolName&quot;:&quot;Forest Hall School&quot;,&quot;SchoolType&quot;:&quot;Academy sponsor led&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:16,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Does not apply&quot;,&quot;NumberOfPupils&quot;:486,&quot;Website&quot;:&quot;https://www.foresthallschool.org/&quot;,&quot;Lat&quot;:51.893972,&quot;Lng&quot;:0.207512,&quot;OfstedRating&quot;:&quot;Requires improvement&quot;},{&quot;Distance&quot;:2.1155491856814823,&quot;URN&quot;:117577,&quot;SchoolName&quot;:&quot;The Bishop\u0027s Stortford High School&quot;,&quot;SchoolType&quot;:&quot;Foundation school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Boys&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:1191,&quot;Website&quot;:&quot;http://www.tbshs.org/&quot;,&quot;Lat&quot;:51.856692,&quot;Lng&quot;:0.162337,&quot;OfstedRating&quot;:&quot;Outstanding&quot;},{&quot;Distance&quot;:2.3209292465347406,&quot;URN&quot;:117594,&quot;SchoolName&quot;:&quot;St Mary\u0027s Catholic School&quot;,&quot;SchoolType&quot;:&quot;Voluntary aided school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Roman Catholic&quot;,&quot;NumberOfPupils&quot;:1000,&quot;Website&quot;:&quot;http://www.stmarys.net&quot;,&quot;Lat&quot;:51.870439,&quot;Lng&quot;:0.153656,&quot;OfstedRating&quot;:&quot;Outstanding&quot;},{&quot;Distance&quot;:4.1483661656569772,&quot;URN&quot;:137156,&quot;SchoolName&quot;:&quot;Leventhorpe&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:1269,&quot;Website&quot;:&quot;http://www.leventhorpe.net/&quot;,&quot;Lat&quot;:51.820835,&quot;Lng&quot;:0.149345,&quot;OfstedRating&quot;:&quot;Outstanding&quot;},{&quot;Distance&quot;:6.3326497748889921,&quot;URN&quot;:137975,&quot;SchoolName&quot;:&quot;Helena Romanes School and Sixth Form Centre&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:1198,&quot;Website&quot;:&quot;http://www.helena-romanes.essex.sch.uk/&quot;,&quot;Lat&quot;:51.881584,&quot;Lng&quot;:0.354317,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:7.0157284009995715,&quot;URN&quot;:139271,&quot;SchoolName&quot;:&quot;Mark Hall Academy&quot;,&quot;SchoolType&quot;:&quot;Academy sponsor led&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:16,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:701,&quot;Website&quot;:&quot;http://www.mha.attrust.org.uk&quot;,&quot;Lat&quot;:51.778886,&quot;Lng&quot;:0.131520,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:7.6439797115670833,&quot;URN&quot;:143697,&quot;SchoolName&quot;:&quot;Sir Frederick Gibberd College&quot;,&quot;SchoolType&quot;:&quot;Free school&quot;,&quot;SchoolTypeGroup&quot;:&quot;Free school&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:0,&quot;MaxAge&quot;:0,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:0,&quot;Website&quot;:&quot;http://www.sirfrederickgibberdcollege.org/&quot;,&quot;Lat&quot;:51.777570,&quot;Lng&quot;:0.106727,&quot;OfstedRating&quot;:&quot;Not Available&quot;},{&quot;Distance&quot;:7.6533535818519,&quot;URN&quot;:137694,&quot;SchoolName&quot;:&quot;Burnt Mill Academy&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:16,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:1163,&quot;Website&quot;:&quot;http://www.burntmillacademy.org/&quot;,&quot;Lat&quot;:51.776864,&quot;Lng&quot;:0.108013,&quot;OfstedRating&quot;:&quot;Outstanding&quot;},{&quot;Distance&quot;:8.2149152330589352,&quot;URN&quot;:138734,&quot;SchoolName&quot;:&quot;Joyce Frankland Academy, Newport&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:858,&quot;Website&quot;:&quot;http://www.jfan.org.uk/&quot;,&quot;Lat&quot;:51.987465,&quot;Lng&quot;:0.212340,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:8.2832492982569317,&quot;URN&quot;:145931,&quot;SchoolName&quot;:&quot;Bmat Stem Academy&quot;,&quot;SchoolType&quot;:&quot;University technical college&quot;,&quot;SchoolTypeGroup&quot;:&quot;Free school&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:19,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Does not apply&quot;,&quot;NumberOfPupils&quot;:50,&quot;Website&quot;:&quot;http://www.bmatstemacademy.org/&quot;,&quot;Lat&quot;:51.769529,&quot;Lng&quot;:0.099279,&quot;OfstedRating&quot;:&quot;Not Available&quot;},{&quot;Distance&quot;:8.4777402255652063,&quot;URN&quot;:137058,&quot;SchoolName&quot;:&quot;St Mark\u0027s West Essex Catholic School&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Roman Catholic&quot;,&quot;NumberOfPupils&quot;:983,&quot;Website&quot;:&quot;http://www.st-marks.essex.sch.uk/&quot;,&quot;Lat&quot;:51.764472,&quot;Lng&quot;:0.103522,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:8.5027894989077826,&quot;URN&quot;:137445,&quot;SchoolName&quot;:&quot;Passmores Academy&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:16,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:1116,&quot;Website&quot;:&quot;http://www.passmoresacademy.com&quot;,&quot;Lat&quot;:51.757245,&quot;Lng&quot;:0.123849,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:9.5073822931468239,&quot;URN&quot;:137552,&quot;SchoolName&quot;:&quot;Stewards Academy - Science Specialist, Harlow&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:16,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:1080,&quot;Website&quot;:&quot;http://www.stewardsacademy.org&quot;,&quot;Lat&quot;:51.750981,&quot;Lng&quot;:0.093073,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:10.313953478407253,&quot;URN&quot;:136776,&quot;SchoolName&quot;:&quot;Saffron Walden County High School&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:2102,&quot;Website&quot;:&quot;http://www.swchs.net/&quot;,&quot;Lat&quot;:52.017138,&quot;Lng&quot;:0.231497,&quot;OfstedRating&quot;:&quot;Outstanding&quot;},{&quot;Distance&quot;:10.633623237494048,&quot;URN&quot;:141947,&quot;SchoolName&quot;:&quot;The Ongar Academy&quot;,&quot;SchoolType&quot;:&quot;Free school&quot;,&quot;SchoolTypeGroup&quot;:&quot;Free school&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:452,&quot;Website&quot;:&quot;http://www.theongaracademy.org&quot;,&quot;Lat&quot;:51.716973,&quot;Lng&quot;:0.248683,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:11.06573108285507,&quot;URN&quot;:136607,&quot;SchoolName&quot;:&quot;The John Warner School&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:1318,&quot;Website&quot;:&quot;http://www.johnwarner.herts.sch.uk/&quot;,&quot;Lat&quot;:51.774993,&quot;Lng&quot;:-0.001604,&quot;OfstedRating&quot;:&quot;Requires improvement&quot;},{&quot;Distance&quot;:11.185710646389524,&quot;URN&quot;:137985,&quot;SchoolName&quot;:&quot;Presdales School&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Girls&quot;,&quot;Religion&quot;:&quot;Does not apply&quot;,&quot;NumberOfPupils&quot;:1121,&quot;Website&quot;:&quot;http://www.presdales.herts.sch.uk/&quot;,&quot;Lat&quot;:51.802985,&quot;Lng&quot;:-0.030855,&quot;OfstedRating&quot;:&quot;Not Available&quot;},{&quot;Distance&quot;:11.462844586501641,&quot;URN&quot;:137090,&quot;SchoolName&quot;:&quot;The Chauncy School&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:1103,&quot;Website&quot;:&quot;http://chauncyschool.com/&quot;,&quot;Lat&quot;:51.814890,&quot;Lng&quot;:-0.045381,&quot;OfstedRating&quot;:&quot;Outstanding&quot;},{&quot;Distance&quot;:11.587205730356663,&quot;URN&quot;:137002,&quot;SchoolName&quot;:&quot;Freman College&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:13,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:948,&quot;Website&quot;:&quot;http://www.freman.org.uk/&quot;,&quot;Lat&quot;:51.951430,&quot;Lng&quot;:-0.027836,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:12.486212543256118,&quot;URN&quot;:143131,&quot;SchoolName&quot;:&quot;Robert Barclay Academy&quot;,&quot;SchoolType&quot;:&quot;Academy sponsor led&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Does not apply&quot;,&quot;NumberOfPupils&quot;:589,&quot;Website&quot;:&quot;&quot;,&quot;Lat&quot;:51.754497,&quot;Lng&quot;:-0.017940,&quot;OfstedRating&quot;:&quot;Requires improvement&quot;},{&quot;Distance&quot;:12.768348492387883,&quot;URN&quot;:145050,&quot;SchoolName&quot;:&quot;Epping St Johns Church of England School&quot;,&quot;SchoolType&quot;:&quot;Academy sponsor led&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Church of England&quot;,&quot;NumberOfPupils&quot;:929,&quot;Website&quot;:&quot;http://www.eppingstjohnsschool.org/&quot;,&quot;Lat&quot;:51.696806,&quot;Lng&quot;:0.098834,&quot;OfstedRating&quot;:&quot;Not Available&quot;},{&quot;Distance&quot;:12.994678570890537,&quot;URN&quot;:137260,&quot;SchoolName&quot;:&quot;Chelmer Valley High School&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:1196,&quot;Website&quot;:&quot;http://www.chelmervalleyhighschool.co.uk&quot;,&quot;Lat&quot;:51.771354,&quot;Lng&quot;:0.467278,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:13.305620061033732,&quot;URN&quot;:136396,&quot;SchoolName&quot;:&quot;The Broxbourne School&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:1287,&quot;Website&quot;:&quot;http://www.broxbourne.herts.sch.uk&quot;,&quot;Lat&quot;:51.740689,&quot;Lng&quot;:-0.024034,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:13.315944216152758,&quot;URN&quot;:139873,&quot;SchoolName&quot;:&quot;Richard Hale School&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Boys&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:1121,&quot;Website&quot;:&quot;http://www.richardhale.herts.sch.uk/&quot;,&quot;Lat&quot;:51.792475,&quot;Lng&quot;:-0.077687,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:13.596966281011627,&quot;URN&quot;:115238,&quot;SchoolName&quot;:&quot;St John Payne Catholic School, Chelmsford&quot;,&quot;SchoolType&quot;:&quot;Voluntary aided school&quot;,&quot;SchoolTypeGroup&quot;:&quot;State school&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;Roman Catholic&quot;,&quot;NumberOfPupils&quot;:1107,&quot;Website&quot;:&quot;http://www.sjp.essex.sch.uk&quot;,&quot;Lat&quot;:51.751847,&quot;Lng&quot;:0.463041,&quot;OfstedRating&quot;:&quot;Good&quot;},{&quot;Distance&quot;:13.874550010596872,&quot;URN&quot;:137072,&quot;SchoolName&quot;:&quot;Hylands School&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Mixed&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:741,&quot;Website&quot;:&quot;http://www.hylands-tkat.org/&quot;,&quot;Lat&quot;:51.728970,&quot;Lng&quot;:0.440175,&quot;OfstedRating&quot;:&quot;Requires improvement&quot;},{&quot;Distance&quot;:14.113523448529929,&quot;URN&quot;:136412,&quot;SchoolName&quot;:&quot;Chelmsford County High School for Girls&quot;,&quot;SchoolType&quot;:&quot;Academy converter&quot;,&quot;SchoolTypeGroup&quot;:&quot;Academy&quot;,&quot;EduPhase&quot;:&quot;Secondary&quot;,&quot;MinAge&quot;:11,&quot;MaxAge&quot;:18,&quot;Gender&quot;:&quot;Girls&quot;,&quot;Religion&quot;:&quot;None&quot;,&quot;NumberOfPupils&quot;:967,&quot;Website&quot;:&quot;http://www.cchs.co.uk/&quot;,&quot;Lat&quot;:51.743410,&quot;Lng&quot;:0.467826,&quot;OfstedRating&quot;:&quot;Not Available&quot;}]" />
+                                        <div class="tab-content tab-content-schools">
+                                            <div class="tab-pane active" id="primary" role="tabpanel">
+                                                <div class="property-map mb-2" id="schoolMapPrimary"></div>
+                                                <div class="school-info" id="school-info">
+                                                    <span class="icon" id="selected-id"></span>
+                                                    <table class="table table-borderless">
+                                                        <tr class="background-dark-green">
+                                                            <td width="10%"> &nbsp;&nbsp;&nbsp; </td>
+                                                            <td width="90%">
+                                                                <h3 id="selected-schoolName"></h3>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="background-light-green">
+                                                            <td width="10%"></td>
+                                                            <td width="90%"><span id="selected-distance"></span> miles | <span id="selected-schoolGroupType"></span> | <a href="#" class="website-link-white" id="selected-website" target="_blank">Website</a></td>
+                                                        </tr>
+                                                        <tr class="background-dark-gray">
+                                                            <td width="10%"></td>
+                                                            <td width="90%">Ofsted Report: <span id="selected-ofsted"></span> (<a href="#" target="_blank" class="website-link-white" id="selected-ofsted-report">View full report</a>)</td>
+                                                        </tr>
+                                                        <tr class="background-light-gray">
+                                                            <td width="10%"></td>
+                                                            <td width="90%">
+                                                                <div class="row">
+                                                                    <div class="col">Age: <span id="selected-age"></span> years</div>
+                                                                    <div class="col">Religion: <span id="selected-religion"></span></div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col">Gender: <span id="selected-gender"></span></div>
+                                                                    <div class="col">Number of Pupils: <span id="selected-numberOfPupils"></span></div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+
+                                                    <table class="table table-borderless table-striped " id="schoolTablePrimary">
+                                                        <tbody>
+                                                                <tr  id="selected-row1">
+                                                                    <td width="10%">
+                                                                        1
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Summercroft Primary School <br />
+                                                                        1.18 miles away | Academy | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr  id="selected-row2">
+                                                                    <td width="10%">
+                                                                        2
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Birchanger Church of England Voluntary Controlled Primary School <br />
+                                                                        1.34 miles away | State school | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Voluntary controlled school</td>
+                                                                </tr>
+                                                                <tr  id="selected-row3">
+                                                                    <td width="10%">
+                                                                        3
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        All Saints Church of England Primary School and Nursery, Bishop&#39;s Stortford <br />
+                                                                        1.44 miles away | State school | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Voluntary aided school</td>
+                                                                </tr>
+                                                                <tr  id="selected-row4">
+                                                                    <td width="10%">
+                                                                        4
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Thorn Grove Primary School <br />
+                                                                        1.49 miles away | State school | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Community school</td>
+                                                                </tr>
+                                                                <tr  id="selected-row5">
+                                                                    <td width="10%">
+                                                                        5
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        St Mary&#39;s CofE Foundation Primary School <br />
+                                                                        1.91 miles away | State school | Ofsted: Requires improvement
+                                                                    </td>
+                                                                    <td width="30%">Foundation school</td>
+                                                                </tr>
+                                                                <tr  id="selected-row6">
+                                                                    <td width="10%">
+                                                                        6
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Thorley Hill Primary School <br />
+                                                                        2.20 miles away | State school | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Community school</td>
+                                                                </tr>
+                                                                <tr  id="selected-row7">
+                                                                    <td width="10%">
+                                                                        7
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        St Michael&#39;s Church of England Primary School <br />
+                                                                        2.23 miles away | State school | Ofsted: Outstanding
+                                                                    </td>
+                                                                    <td width="30%">Voluntary aided school</td>
+                                                                </tr>
+                                                                <tr  id="selected-row8">
+                                                                    <td width="10%">
+                                                                        8
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Windhill21 <br />
+                                                                        2.24 miles away | Academy | Ofsted: Outstanding
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr  id="selected-row9">
+                                                                    <td width="10%">
+                                                                        9
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Magna Carta Primary Academy <br />
+                                                                        2.45 miles away | Free school | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Free school</td>
+                                                                </tr>
+                                                                <tr  id="selected-row10">
+                                                                    <td width="10%">
+                                                                        10
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Richard Whittington Primary School <br />
+                                                                        2.49 miles away | State school | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Community school</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-row11">
+                                                                    <td width="10%">
+                                                                        11
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        St Joseph&#39;s Catholic Primary School <br />
+                                                                        2.51 miles away | State school | Ofsted: Outstanding
+                                                                    </td>
+                                                                    <td width="30%">Voluntary aided school</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-row12">
+                                                                    <td width="10%">
+                                                                        12
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Northgate Primary School <br />
+                                                                        2.54 miles away | Academy | Ofsted: Not Available
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-row13">
+                                                                    <td width="10%">
+                                                                        13
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Little Hallingbury Church of England Voluntary Aided Primary School <br />
+                                                                        2.61 miles away | State school | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Voluntary aided school</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-row14">
+                                                                    <td width="10%">
+                                                                        14
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Roseacres Primary School <br />
+                                                                        2.65 miles away | Academy | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Academy sponsor led</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-row15">
+                                                                    <td width="10%">
+                                                                        15
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Bentfield Primary School <br />
+                                                                        2.87 miles away | State school | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Community school</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-row16">
+                                                                    <td width="10%">
+                                                                        16
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Manor Fields Primary School <br />
+                                                                        2.96 miles away | Academy | Ofsted: Not Available
+                                                                    </td>
+                                                                    <td width="30%">Academy sponsor led</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-row17">
+                                                                    <td width="10%">
+                                                                        17
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Hillmead Primary School <br />
+                                                                        3.02 miles away | State school | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Community school</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-row18">
+                                                                    <td width="10%">
+                                                                        18
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Takeley Primary School <br />
+                                                                        3.15 miles away | Academy | Ofsted: Requires improvement
+                                                                    </td>
+                                                                    <td width="30%">Academy sponsor led</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-row19">
+                                                                    <td width="10%">
+                                                                        19
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Spellbrook CofE Primary School <br />
+                                                                        3.23 miles away | State school | Ofsted: Requires improvement
+                                                                    </td>
+                                                                    <td width="30%">Voluntary controlled school</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-row20">
+                                                                    <td width="10%">
+                                                                        20
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        St Mary&#39;s Church of England Voluntary Aided Primary School, Hatfield Broad Oak <br />
+                                                                        3.32 miles away | State school | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Voluntary aided school</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-row21">
+                                                                    <td width="10%">
+                                                                        21
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Elsenham Church of England Voluntary Controlled Primary School <br />
+                                                                        3.33 miles away | State school | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Voluntary controlled school</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-row22">
+                                                                    <td width="10%">
+                                                                        22
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Farnham Church of England Primary School <br />
+                                                                        3.53 miles away | State school | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Voluntary aided school</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-row23">
+                                                                    <td width="10%">
+                                                                        23
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Manuden Primary School <br />
+                                                                        3.79 miles away | State school | Ofsted: Outstanding
+                                                                    </td>
+                                                                    <td width="30%">Community school</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-row24">
+                                                                    <td width="10%">
+                                                                        24
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Hatfield Heath Primary School <br />
+                                                                        3.83 miles away | Academy | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-row25">
+                                                                    <td width="10%">
+                                                                        25
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Reedings Junior School <br />
+                                                                        4.29 miles away | State school | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Community school</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-row26">
+                                                                    <td width="10%">
+                                                                        26
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Mandeville Primary School <br />
+                                                                        4.45 miles away | State school | Ofsted: Outstanding
+                                                                    </td>
+                                                                    <td width="30%">Community school</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-row27">
+                                                                    <td width="10%">
+                                                                        27
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Fawbert and Barnard Infants&#39; School <br />
+                                                                        4.48 miles away | State school | Ofsted: Outstanding
+                                                                    </td>
+                                                                    <td width="30%">Community school</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-row28">
+                                                                    <td width="10%">
+                                                                        28
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Henham and Ugley Primary and Nursery School <br />
+                                                                        4.56 miles away | State school | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Community school</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-row29">
+                                                                    <td width="10%">
+                                                                        29
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Sheering Church of England Voluntary Controlled Primary School <br />
+                                                                        4.56 miles away | State school | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Voluntary controlled school</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-row30">
+                                                                    <td width="10%">
+                                                                        30
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        Little Hadham Primary School <br />
+                                                                        4.95 miles away | State school | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Community school</td>
+                                                                </tr>
+                                                        </tbody>
+                                                    </table>
+                                                <input type="hidden" name="showMorePrimary" id="showMorePrimary" value="10" />
+                                                <p class="text-center"><a href="javascript:void(0)" onclick="showMoreItemsPrimary()" id="showMoreLinkPrimary">Show more <i class="fas fa-chevron-down"></i></a></p>
+                                            </div>
+                                            <div class="tab-pane" id="secondary" role="tabpanel">
+                                                <div class="property-map mb-2" id="schoolMapSecondary"></div>
+                                                <div class="school-info">
+                                                    <span class="icon" id="selected-id2"></span>
+                                                    <table class="table table-borderless">
+                                                        <tr class="background-dark-green">
+                                                            <td width="10%"> &nbsp;&nbsp;&nbsp; </td>
+                                                            <td width="90%">
+                                                                <h3 id="selected-schoolName2"></h3>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="background-light-green">
+                                                            <td width="10%"></td>
+                                                            <td width="90%"><span id="selected-distance2"></span> miles | <span id="selected-schoolGroupType2"></span> | <a href="#" class="website-link-white" id="selected-website2" target="_blank">Website</a></td>
+                                                        </tr>
+                                                        <tr class="background-dark-gray">
+                                                            <td width="10%"></td>
+                                                            <td width="90%">Ofsted Report: <span id="selected-ofsted2"></span> (<a href="#" target="_blank" class="website-link-white" id="selected-ofsted-report2">View full report</a>)</td>
+                                                        </tr>
+                                                        <tr class="background-light-gray">
+                                                            <td width="10%"></td>
+                                                            <td width="90%">
+                                                                <div class="row">
+                                                                    <div class="col">Age: <span id="selected-age2"></span> years</div>
+                                                                    <div class="col">Religion: <span id="selected-religion2"></span></div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col">Gender: <span id="selected-gender2"></span></div>
+                                                                    <div class="col">Number of Pupils: <span id="selected-numberOfPupils2"></span></div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                    <table class="table table-borderless table-striped " id="schoolTableSecondary">
+                                                        <tbody>
+
+                                                                <tr  id="selected-secondary1">
+                                                                    <td width="5%">
+                                                                        1
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        Birchwood High School <br />
+                                                                        1.16 miles away | Academy | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr  id="selected-secondary2">
+                                                                    <td width="5%">
+                                                                        2
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        The Hertfordshire &amp; Essex High School and Science College <br />
+                                                                        1.57 miles away | Academy | Ofsted: Not Available
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr  id="selected-secondary3">
+                                                                    <td width="5%">
+                                                                        3
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        Hockerill Anglo-European College <br />
+                                                                        1.58 miles away | Academy | Ofsted: Not Available
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr  id="selected-secondary4">
+                                                                    <td width="5%">
+                                                                        4
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        Forest Hall School <br />
+                                                                        1.75 miles away | Academy | Ofsted: Requires improvement
+                                                                    </td>
+                                                                    <td width="30%">Academy sponsor led</td>
+                                                                </tr>
+                                                                <tr  id="selected-secondary5">
+                                                                    <td width="5%">
+                                                                        5
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        The Bishop&#39;s Stortford High School <br />
+                                                                        2.12 miles away | State school | Ofsted: Outstanding
+                                                                    </td>
+                                                                    <td width="30%">Foundation school</td>
+                                                                </tr>
+                                                                <tr  id="selected-secondary6">
+                                                                    <td width="5%">
+                                                                        6
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        St Mary&#39;s Catholic School <br />
+                                                                        2.32 miles away | State school | Ofsted: Outstanding
+                                                                    </td>
+                                                                    <td width="30%">Voluntary aided school</td>
+                                                                </tr>
+                                                                <tr  id="selected-secondary7">
+                                                                    <td width="5%">
+                                                                        7
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        Leventhorpe <br />
+                                                                        4.15 miles away | Academy | Ofsted: Outstanding
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr  id="selected-secondary8">
+                                                                    <td width="5%">
+                                                                        8
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        Helena Romanes School and Sixth Form Centre <br />
+                                                                        6.33 miles away | Academy | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr  id="selected-secondary9">
+                                                                    <td width="5%">
+                                                                        9
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        Mark Hall Academy <br />
+                                                                        7.02 miles away | Academy | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Academy sponsor led</td>
+                                                                </tr>
+                                                                <tr  id="selected-secondary10">
+                                                                    <td width="5%">
+                                                                        10
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        Sir Frederick Gibberd College <br />
+                                                                        7.64 miles away | Free school | Ofsted: Not Available
+                                                                    </td>
+                                                                    <td width="30%">Free school</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-secondary11">
+                                                                    <td width="5%">
+                                                                        11
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        Burnt Mill Academy <br />
+                                                                        7.65 miles away | Academy | Ofsted: Outstanding
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-secondary12">
+                                                                    <td width="5%">
+                                                                        12
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        Joyce Frankland Academy, Newport <br />
+                                                                        8.21 miles away | Academy | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-secondary13">
+                                                                    <td width="5%">
+                                                                        13
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        Bmat Stem Academy <br />
+                                                                        8.28 miles away | Free school | Ofsted: Not Available
+                                                                    </td>
+                                                                    <td width="30%">University technical college</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-secondary14">
+                                                                    <td width="5%">
+                                                                        14
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        St Mark&#39;s West Essex Catholic School <br />
+                                                                        8.48 miles away | Academy | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-secondary15">
+                                                                    <td width="5%">
+                                                                        15
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        Passmores Academy <br />
+                                                                        8.50 miles away | Academy | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-secondary16">
+                                                                    <td width="5%">
+                                                                        16
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        Stewards Academy - Science Specialist, Harlow <br />
+                                                                        9.51 miles away | Academy | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-secondary17">
+                                                                    <td width="5%">
+                                                                        17
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        Saffron Walden County High School <br />
+                                                                        10.31 miles away | Academy | Ofsted: Outstanding
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-secondary18">
+                                                                    <td width="5%">
+                                                                        18
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        The Ongar Academy <br />
+                                                                        10.63 miles away | Free school | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Free school</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-secondary19">
+                                                                    <td width="5%">
+                                                                        19
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        The John Warner School <br />
+                                                                        11.07 miles away | Academy | Ofsted: Requires improvement
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-secondary20">
+                                                                    <td width="5%">
+                                                                        20
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        Presdales School <br />
+                                                                        11.19 miles away | Academy | Ofsted: Not Available
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-secondary21">
+                                                                    <td width="5%">
+                                                                        21
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        The Chauncy School <br />
+                                                                        11.46 miles away | Academy | Ofsted: Outstanding
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-secondary22">
+                                                                    <td width="5%">
+                                                                        22
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        Freman College <br />
+                                                                        11.59 miles away | Academy | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-secondary23">
+                                                                    <td width="5%">
+                                                                        23
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        Robert Barclay Academy <br />
+                                                                        12.49 miles away | Academy | Ofsted: Requires improvement
+                                                                    </td>
+                                                                    <td width="30%">Academy sponsor led</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-secondary24">
+                                                                    <td width="5%">
+                                                                        24
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        Epping St Johns Church of England School <br />
+                                                                        12.77 miles away | Academy | Ofsted: Not Available
+                                                                    </td>
+                                                                    <td width="30%">Academy sponsor led</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-secondary25">
+                                                                    <td width="5%">
+                                                                        25
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        Chelmer Valley High School <br />
+                                                                        12.99 miles away | Academy | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-secondary26">
+                                                                    <td width="5%">
+                                                                        26
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        The Broxbourne School <br />
+                                                                        13.31 miles away | Academy | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-secondary27">
+                                                                    <td width="5%">
+                                                                        27
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        Richard Hale School <br />
+                                                                        13.32 miles away | Academy | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-secondary28">
+                                                                    <td width="5%">
+                                                                        28
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        St John Payne Catholic School, Chelmsford <br />
+                                                                        13.60 miles away | State school | Ofsted: Good
+                                                                    </td>
+                                                                    <td width="30%">Voluntary aided school</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-secondary29">
+                                                                    <td width="5%">
+                                                                        29
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        Hylands School <br />
+                                                                        13.87 miles away | Academy | Ofsted: Requires improvement
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                                <tr style=display:none id="selected-secondary30">
+                                                                    <td width="5%">
+                                                                        30
+                                                                    </td>
+                                                                    <td width="65%">
+                                                                        Chelmsford County High School for Girls <br />
+                                                                        14.11 miles away | Academy | Ofsted: Not Available
+                                                                    </td>
+                                                                    <td width="30%">Academy converter</td>
+                                                                </tr>
+                                                        </tbody>
+                                                    </table>
+                                                <input type="hidden" name="showMoreSecondary" id="showMoreSecondary" value="10" />
+                                                <p class="text-center"><a href="javascript:void(0)" onclick="showMoreItemsSecondary()" id="showMoreLinkSecondary">Show more <i class="fas fa-chevron-down"></i></a></p>
+                                            </div>
+                                        </div>
+                                        <p class="small">
+                                            This school data is updated periodically and may not provide the most up-to-date information available. Links are provided to the full Ofsted report
+                                            for ease of reference. The data here is provided for informational purposes only and Help to Buy Agent for the South does not accept any liability for
+                                            decisions based on this data. The data contains public sector information licensed under the Open Government Licence v3.0.
+                                        </p>
+                                </div>
+                                <div class="tab-pane" id="downloads" role="tabpanel">
+
+                                            <p><a href="https://saprodhtb.blob.core.windows.net/properties/72987/pdfs/72987-57546-floorplan.pdf" target="_blank" class="btn btn-primary"><i class="fas fa-layer-group"></i> &nbsp; Floor Plans</a></p>
+                                </div>
+                                    <div class="tab-pane" id="plots" role="tabpanel">
+                                            <div class="card mb-1">
+                                                <div class="card-body">
+                                                    Plot Number: <span class="font-weight-bold">
+                                                        3
+                                                    </span><br>
+                                                        <span>Number of Bedrooms: <span class="font-weight-bold">2 </span><br /></span>
+
+                                                        <span>
+                                                            Price: <span class="font-weight-bold">&#163;385,000.00 </span>
+                                                        </span>
+                                                                                                    </div>
+                                            </div>
+                                            <div class="card mb-1">
+                                                <div class="card-body">
+                                                    Plot Number: <span class="font-weight-bold">
+                                                        5
+                                                    </span><br>
+                                                        <span>Number of Bedrooms: <span class="font-weight-bold">2 </span><br /></span>
+
+                                                        <span>
+                                                            Price: <span class="font-weight-bold">&#163;385,000.00 </span>
+                                                        </span>
+                                                                                                    </div>
+                                            </div>
+                                            <div class="card mb-1">
+                                                <div class="card-body">
+                                                    Plot Number: <span class="font-weight-bold">
+                                                        4
+                                                    </span><br>
+                                                        <span>Number of Bedrooms: <span class="font-weight-bold">2 </span><br /></span>
+
+                                                        <span>
+                                                            Price: <span class="font-weight-bold">&#163;375,000.00 </span>
+                                                        </span>
+                                                                                                    </div>
+                                            </div>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <p class="small">These details do not constitute any part of an offer or contract. Any prospective purchaser must satisfy themselves by inspection or otherwise of the accuracy of the information displayed on these web pages. With resales, none of the main services have been tested and you may wish to arrange your own independent survey before purchase.</p>
+
+                        <p class="small">Property details are added to this site by the housing provider when properties are available for marketing. It is the housing provider's responsibility to notify Help to Buy South when properties are sold/let. If you require any further information regarding this property please contact the housing provider directly.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>Guides</h3>
+
+            <p><a href="https://media2.helptobuyagent3.org.uk/media/z5xpber4/htbs_sharedownership.pdf" target="_blank" class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i> Guide to Shared Ownership</a></p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="registerInterest" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="registerInterestLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title color-dark-green font-weight-bold" id="registerInterestLabel">Register Interest</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                        <p>Thank you for updating your application.  Your updates have been submitted to our Customer Services team. Once approved (within 4 working days) you will be able to register interest in available properties.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="registerInterestForm" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="registerInterestFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content" role="form">
+            <form action="" method="post" onsubmit="registerInterestFormSubmit(event)">
+                <input type="hidden" name="interestId" id="interestId" value="72987" />
+                <div class="modal-header">
+                    <h5 class="modal-title color-dark-green font-weight-bold" id="registerInterestFormLabel">Register Interest</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-3"><label for="interestName" class="font-weight-bold">Name</label></div>
+                            <div class="col-lg-6">
+                                <input type="text" name="interestName" id="interestName" class="form-control" required="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-3"><label for="interestEmail" class="font-weight-bold">Email</label></div>
+                            <div class="col-lg-6">
+                                <input type="email" name="interestEmail" id="interestEmail" class="form-control" required="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-3"><label for="interestTelephone" class="font-weight-bold">Telephone</label></div>
+                            <div class="col-lg-6">
+                                <input type="text" name="interestTelephone" id="interestTelephone" class="form-control" required="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="registerInterestSuccess" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="registerInterestSuccessLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title color-dark-green font-weight-bold" id="registerInterestSuccessLabel">Register Interest</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Thank you for registering your interest in "Mead Field Drive" (Scheme ID "72987").</p>
+                <p>The developer has been notified. For further information about this property please contact the developer direct.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+
+    <div class="row">
+        <div class="col-lg-12 text-center mb-4">
+            <hr class="mt-4 mb-4 background-dark-green" />
+            <div class='sharethis-inline-share-buttons'></div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+
+
+
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="nav-links">
+            <a href="/cookies/">Cookies</a>
+            <a href="/terms-and-conditions/">Terms and conditions</a>
+            <a href="/privacy-statement/">Privacy Policy</a>
+            <a href="/accessibility/">Accessibility</a>
+            <a href="/sitemap/">Sitemap</a>
+    </div>
+                        <p class="pt-2 pb-2">Contact number:  <a href="tel:08004561188" class="text-white">0800 456 1188</a> | Email address : <a href="mailto:info@helptobuyagent3.org.uk" class="text-white">info@helptobuyagent3.org.uk</a></p>
+                        <ul class="list-inline footer-social-links">
+                            <li class="list-inline-item"><a href="http://www.facebook.com/helptobuy" class="" target="_blank" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
+                            <li class="list-inline-item"><a href="http://www.twitter.com/helptobuy" target="_blank" title="Twitter" aria-label="Twitter"><i class="fab fa-twitter-square" aria-hidden="true"></i></a></li>
+                            <li class="list-inline-item"><a href="https://linkedin.com/company/help-to-buy-equity-loan" title="LinkedIn" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+            <div ng-app="SpecialMessageApp" ng-controller="specialMessageController as ctrl" class="modal fade" data-backdrop="static" data-keyboard="false" id="specialMessage" tabindex="-1" role="dialog" aria-labelledby="specialMessageLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title color-dark-green font-weight-bold" id="specialMessageLabel">Help to Buy Agent for the South Update</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="ctrl.closeSpecialMessage()">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Help to Buy: Equity Loan ends on 31 March 2023. To be eligible for equity loan funding you must legally complete and get the keys to your home by 31 March 2023. To apply for Help to Buy, you must reserve your home with a registered homebuilder and submit your Property Information Form to your agent by 6pm on 31 October 2022. Find out more about the closure of the scheme in our <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1086075/Customer_FAQs_Help_to_Buy_2021-2023_20220513_-__GOV.UK_Copy.pdf">FAQs</a></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal" ng-click="ctrl.closeSpecialMessage()">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/Scripts/libs/jquery.min.js">\x3C/script>')</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha256-pS96pU17yq+gVu4KBQJi38VpSuKN7otMrDQprzf/DWY=" crossorigin="anonymous"></script>
+    <script>window.Popper || document.write('<script src="/Scripts/libs/popper.min.js">\x3C/script>')</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+    <script>$.fn.modal || document.write('<script src="/Scripts/libs/bootstrap.min.js">\x3C/script>')</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.9/angular.min.js"
+            integrity="sha256-b5NvmvUcyr0wpBOLnNbaWH5zKQAivhj8yMYhfXEumQA=" crossorigin="anonymous"></script>
+    <script>window.angular || document.write('<script src="/Scripts/libs/angular.min.js">\x3C/script>')</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"
+            integrity="sha256-obZACiHd7gkOk9iIL/pimWMTJ4W/pBsKu+oZnSeBIek=" crossorigin="anonymous"></script>
+    <script>if (typeof _ != "function") document.write('<script src="/Scripts/libs/underscore-min.js">\x3C/script>')</script>
+
+    <script src="https://www.google.com/recaptcha/api.js" type="text/javascript"></script><script src="/DependencyHandler.axd?s=L1NjcmlwdHMvTGlicy9ub3Vpc2xpZGVyLm1pbi5qczsvU2NyaXB0cy9MaWJzL2Jvb3RzdHJhcC1kYXRlcGlja2VyLm1pbi5qczsvU2NyaXB0cy9MaWJzL2pxdWVyeS5mbGV4c2xpZGVyLW1pbi5qczsvU2NyaXB0cy9jb3JlLmpzOy9TY3JpcHRzL2FwcC5tb2R1bGUuanM7L1NjcmlwdHMvYW5ndWxhci5jb3JlLmpzOy9TY3JpcHRzL1NlcnZpY2VzL3BhZ2VyU2VydmljZS5qczsvU2NyaXB0cy9EaXJlY3RpdmVzL2VxdWFsSGVpZ2h0cy5kaXJlY3RpdmUuanM7L1NjcmlwdHMvRGlyZWN0aXZlcy9kYXRlUGlja2VyLmRpcmVjdGl2ZS5qczsvU2NyaXB0cy9QYWdlcy9wcm9wZXJ0eS1kZXRhaWxzLmpzOw&amp;t=Javascript&amp;cdv=592075396" type="text/javascript"></script>
+    
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ6_omIacvqM1NuTUM9V66D5uT3wvW_7E&libraries=places"></script>
+
+    <!-- Start of Help to Buy Zendesk Widget script -->
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=ef135a6f-abfb-40a8-82f2-2668055908a2"></script>
+    <!-- End of Help to Buy Zendesk Widget script -->
+    
+    
+    <!-- WebMetric snippet starts here -->
+    <div class="gm_sidebar gm_sidebar_rh">
+        <a href="https://websurveys2.govmetric.com/theme/gm/2345"
+           target="_blank"
+           class="gm_sidebar_anchor"
+           title="How do you rate our website?"
+           rel="nofollow">
+            <img src="https://websurveys2.govmetric.com/imgs/triggers/rh.png" alt="rating button" />
+        </a>
+    </div>
+    <link rel="stylesheet" type="text/css" href="https://websurveys2.govmetric.com/css/client/gm_sidebar_rh.css" />
+    <script type="text/javascript" src="https://websurveys2.govmetric.com/js/client/gm_sidebar.js"></script>
+    <script type="text/javascript" src="https://hitcounter.govmetric.com/2346"></script>
+    <!-- WebMetric snippet ends here -->
+</body>
+</html>

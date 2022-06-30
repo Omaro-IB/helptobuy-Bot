@@ -1,0 +1,5 @@
+(function(){
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://hitcounter.govmetric.com/Home/Index/2346?override='+ encodeURIComponent(location.href), true);
+    xhr.send(null);
+})();
