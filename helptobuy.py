@@ -17,6 +17,7 @@ def register_interest(yourAuthCookie, url, address):
         "address": address
     }
     r2 = s.post("https://helptobuyagent3.org.uk/umbraco/surface/htbapi/registerinterest", cookies=cookies, params=params)
+    print("posted request with params "+"id="+id_+", address="+address)
 
 def findNewest():
     # extract dataLine from HTML

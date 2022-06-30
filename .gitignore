@@ -1,3 +1,5 @@
 # Default ignored files
 /__main__.py
 /__main__.pyw
+/data.json
+/installation_instructions.txt
