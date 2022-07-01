@@ -24,7 +24,7 @@ def findNewest():
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0"
     }
-    page = requests.get("https://helptobuyagent3.org.uk/find-a-home/", headers=headers)
+    page = requests.get("https://helptobuyagent3.org.uk/find-a-home/?loc=Bristol+BS7%2C+UK&dst=20&Tenure=b&Type=0&PropertyDeveloper=0&Garden=0&DaysAdded=0&Sort=dateadded-desc&BedroomsMin=0&BedroomsMax=6&lat=51.48144689999999&lng=-2.5797458&sloc=Bristol+BS7%2C+UK&setnum=0&pagenum=1&maxrows=0&numresults=12&initialpaging=initialpaging&g-recaptcha-response=03AGdBq24p5n56Re7FHPdRf7g--VysBQqximLORl1hXHZBha31fW3sBFqo1qOI3imNQTDOfujxD9n1dUUs7w5P2y36TYAXQoHlhAhCbuZ-t69xke9MRuV0h1m6Ne280yUlEPgZRqdrE6xN0hdZo3mJLPe2FNPBvPpssaTnhbU678Wj2W9VJlDRT2pQ5yG64tRzV--y7VtdrCmXi0VSU97aimM9ZlmKxR30UwiCuztypfboY1UNYNqaAIvwMP0WkVH2BaFNNZB8GcGVWbU5osXn-VXSz3rP-0CBvbX9JLno9g3M5LpnchpCCwCzUyqtyr4m2nP_u5SR3-Toupjg4XqfwZWk573_pgOZRtuJlesLQHIjJBCoKYffUyijf7b29TeH64pJq_kKhGXCFL9ORcxt20vfpv8eFmiduZHtQszgHP_yNihsdXBrcWeQuuFF130OPCtJ_gzVz6l2w0ZemHj5O6uU0_WdQRUk6w", headers=headers)
     soup = bs(page.content, 'html.parser')
     html = str(list(soup.children))
     begin = html.find('<div class="container-fluid search-page')

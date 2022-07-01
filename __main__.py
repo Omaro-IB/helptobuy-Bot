@@ -3,7 +3,6 @@ from helptobuy import findNewest
 import json
 import tkinter as tk
 from apscheduler.schedulers.blocking import BlockingScheduler
-from playsound import playsound
 
 def alertUser(url):
     def submit():
@@ -14,7 +13,6 @@ def alertUser(url):
             dataFile.write(json_object)
         root.destroy()
 
-    playsound("Ding.wav")
     root = tk.Tk()
     tk.Label(root, text="ALERT: Your authorization cookie has expired").grid(row=1, column=1, columnspan=2)
     tk.Label(root, text="Please enter your new cookie below:").grid(row=2, column=1, columnspan=2)
@@ -60,7 +58,7 @@ def runScript():
 
 
 runScript()
-scheduler = BlockingScheduler()
+scheduler = BlockingScheduler({'apscheduler.job_defaults.max_instances': 2})
 scheduler.add_job(runScript, 'interval', minutes=1)
 scheduler.start()
 
