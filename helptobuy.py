@@ -1,7 +1,25 @@
 import requests
 from bs4 import BeautifulSoup as bs
 
+def validate_cookie(yourAuthCookie, url):
+    cookies = {
+        "yourAuthCookie": yourAuthCookie
+    }
+    s = requests.Session()
+    r = s.get(url, cookies=cookies)
+    s2 = requests.Session()
+    r2 = s2.get("https://helptobuyagent3.org.uk", cookies=cookies)
+    if "You need to login or register with Help to Buy Agent for the South before you can express interest in a property" in r.text:
+        return False
+    if not ("My Homepage" in r2.text and "Logout" in r2.text):
+        print("Second one")
+        return False
+    return True
+
 def register_interest(yourAuthCookie, url, address):
+    if not validate_cookie(yourAuthCookie, url):
+        raise ValueError("Invalid Authorization Cookie")
+
     cookies = {
         "yourAuthCookie": yourAuthCookie
     }
@@ -18,6 +36,23 @@ def register_interest(yourAuthCookie, url, address):
     }
     r2 = s.post("https://helptobuyagent3.org.uk/umbraco/surface/htbapi/registerinterest", cookies=cookies, params=params)
     print("posted request with params "+"id="+id_+", address="+address)
+
+def dummy_request(url, yourAuthCookie, Title):
+    cookies = {
+        "yourAuthCookie": yourAuthCookie
+    }
+    s = requests.Session()
+    r = s.get(url, cookies=cookies)
+
+    pos = url.find("id")
+    id_ = url[pos+3:pos+8]
+    address = Title.replace(" ", "+")
+    params = {
+        "id": id_,
+        "address": address
+    }
+    r2 = s.post("https://helptobuyagent3.org.uk/umbraco/surface/htbapi/registerinterest", cookies=cookies, params=params)
+    return str(params) + " - " + str(r2)
 
 def findNewest():
     # extract dataLine from HTML
